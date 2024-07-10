@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 1.5rem "Nunito", sans-serif;
+    min-height:100vh;
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* header,nav,main,footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr;
+    text-align: center;
+} */
+
+header,footer{
+    position: sticky;
+    background-color: #1E293B;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header{
+    top: 0;
+}
+
+footer{
+    bottom:0;
+}
+
+main{
+    flex-grow: 1;
+}
+
+nav{
+    background-color: whitesmoke;
+    color: black;
+    border-bottom: 2px solid black;
+    padding: 0.5rem;
+}
+
+/* ||SMALL */
+@media screen and (min-width: 576px){
+    main{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke,green);
+    }
+    nav{
+        display: none;
+    }
+}
+
+/* ||MEDIUM */
+@media screen and (min-width: 768px){
+    main{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+}
+
+/* ||LARGE */
+@media screen and (min-width: 992px){
+    main{
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke,firebrick);
+    }
+}
+
+/* ||XLARGE */
+@media screen and (min-width: 1220px){
+    main{
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke,rebeccapurple);
+    }
+}
